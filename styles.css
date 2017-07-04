@@ -1,5 +1,6 @@
 body {
   display: flex;
+  background-color: #1B1C1D;
   flex-flow: column;
 }
 
@@ -7,7 +8,22 @@ body {
   flex: 1 1 auto;
 }
 
-.ui.segment
- {
-  flex: 1 1 auto;
+.ui.segment {
+  width: auto;
+}
+
+.ui.active.dimmer {
+  transition: 1.0s;
+}
+
+.red-status {
+  background-color: #db2828;
+}
+
+.green-status {
+  background-color: #21ba45;
+}
+
+.yellow-status{
+  background-color:  #fbbd08;
 }

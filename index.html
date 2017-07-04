@@ -13,18 +13,30 @@
 
 <body>
 
-  <div class='spacer'/>
+  <div id="loader" class="ui active dimmer">
+    <div class="ui massive text loader">Loading hubs...</div>
   </div>
-  <div class="ui raised very padded text container segment main">
-    <div class="ui positive message">
-      <i class="close icon"></i>
-      <div class="header">
-        You are eligible for a reward
-      </div>
-      <p>Go to your <b>special offers</b> page to see now.</p>
-    </div>
+
+  <div class='spacer' />
   </div>
-  <div class='spacer'/>
+  <div id="container" class="ui inverted container segment raised">
+    <table id="rowery" class="ui inverted table">
+      <thead>
+        <tr>
+          <th>
+            Stacja
+          </th>
+          <th>
+            Liczba rowerów
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+  </div>
+  <div class='spacer' />
 
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
