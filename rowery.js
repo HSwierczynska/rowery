@@ -20,7 +20,9 @@ window.onload = function onWindowReady() {
       $('#rowery > tbody:last-child').append(
         $('<tr>').append(
           $('<td>').append(
-            hub.name
+            $('<div>').text(hub.name).addClass('header'),
+            $('<div>').text(hub.address).addClass('description')
+
           ),
           $('<td>').append(
             hub.available_bikes + '/' + hub.racks_amount
@@ -49,7 +51,6 @@ function whichTransitionEvent(element){
     }
 }
 
-/* Listen for a transition! */
 var transitionEvent = whichTransitionEvent(document.getElementById("loader"));
 var e = document.getElementById("loader");
 transitionEvent && e.addEventListener(transitionEvent, function() {
